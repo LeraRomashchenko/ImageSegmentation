@@ -15,7 +15,7 @@ namespace ImageSegmentation
         {
             var img = IOimage.ReadImage(@"C:\Users\romashchenko\Desktop\diplom\segmentation\1.jpg");
             var labeledImage = IOimage.ReadImage(@"C:\Users\romashchenko\Desktop\diplom\segmentation\1_labeled.jpg");
-            var labelColors = new List<Color> {Color.Red, Color.Blue, Color.Yellow};
+            var labelColors = new List<Color> {Color.FromArgb(255, 0, 0), Color.FromArgb(0, 0, 255), Color.FromArgb(255,255,0)};
             var labeledMatrix = GetLabelMatrix(labeledImage, labelColors);
             Webdiff.Debug.PrintMatrix(labeledMatrix, @"C:\Users\romashchenko\Desktop\diplom\segmentation\out");
         }
@@ -30,13 +30,13 @@ namespace ImageSegmentation
                 labels.Add(labelColor, i);
                 i++;
             }
-            for (var k=0; k<img.Height; k++)
+            for (var j=0; j<img.Width; j++)
             {
                 labeledMatrix.Add(new List<int>());
-                for (var j=0; j<img.Width; j++)
+                for (var k=0; k< img.Height; k++)
                 {
                     var curPixel = img.GetPixel(j, k);
-                    labeledMatrix[k].Add(labels.ContainsKey(curPixel) ? labels[curPixel] : 0);
+                    labeledMatrix[j].Add(labels.ContainsKey(curPixel) ? labels[curPixel] : 0);
                 }
             }
             return labeledMatrix;
