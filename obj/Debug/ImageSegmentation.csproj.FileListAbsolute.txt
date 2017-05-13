@@ -1,0 +1,6 @@
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe.config
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.pdb
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.csprojResolveAssemblyReference.cache
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.exe
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.pdb
