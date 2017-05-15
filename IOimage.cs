@@ -19,5 +19,6 @@ namespace ImageSegmentation
             const string filename = "out.png";
             image.Save(filename);
         }
+
     }
 }

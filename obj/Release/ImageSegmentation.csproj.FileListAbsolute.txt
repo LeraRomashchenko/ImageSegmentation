@@ -1,0 +1,6 @@
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Release\ImageSegmentation.exe.config
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Release\ImageSegmentation.exe
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Release\ImageSegmentation.pdb
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Release\ImageSegmentation.csprojResolveAssemblyReference.cache
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Release\ImageSegmentation.exe
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Release\ImageSegmentation.pdb
