@@ -62,7 +62,7 @@ namespace Webdiff
                 string s = "";
                 for (int j = 0; j < matrix[i].Count; j++)
                 {
-                    s += matrix[i][j].B + " ";
+                    s += "(" + matrix[i][j].R  + " , " + matrix[i][j].G + " , " + matrix[i][j].B + ") ";
                 }
                 File.AppendAllLines(filename, new[] { s + "\n" });
             }
