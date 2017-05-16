@@ -22,7 +22,7 @@ namespace ImageSegmentation
             var labeledMatrix = GetLabelMatrix(labeledImage, labelColors);
             Webdiff.Debug.PrintMatrix(labeledMatrix, pathToSource + "out");
 
-            var parity = 0;
+            var parity = 1;
             var i = 0;
             var _res = GetResultImage(labeledMatrix, pathToSource + "4.jpg");
             Webdiff.Debug.PrintMatrix(_res, pathToSource + "out2");
@@ -76,7 +76,7 @@ namespace ImageSegmentation
                 {
                     if ((i + j)%2==parity)
                     {
-                        if (i == 81 && j == 141)
+                        if (i == 265 && j == 128)
                         {
                             var upperNeighbor = (i - 1 >= 0) ? labelMatrix[i - 1][j] : new ProbabilityDistribution(1, 1);
                             var leftNeighbor = (j - 1 >= 0) ? labelMatrix[i][j - 1] : new ProbabilityDistribution(1, 1);
@@ -87,13 +87,12 @@ namespace ImageSegmentation
                                 ? labelMatrix[i + 1][j]
                                 : new ProbabilityDistribution(1, 1);
                             var currentPixel = img.GetPixel(i, j);
-                            var p1 = (labelMatrix[i][j].FirstClass + upperNeighbor.FirstClass + leftNeighbor.FirstClass
-                                    + rightNeighbor.FirstClass + lowNeighbor.FirstClass) *
-                                    ((i - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i - 1, j)) : 1) *
-                                    ((j - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i, j - 1)) : 1) *
-                                    ((i + 1 < img.Width) ? ColorMetric(currentPixel, img.GetPixel(i + 1, j)) : 1) *
-                                    ((j + 1 < img.Height) ? ColorMetric(currentPixel, img.GetPixel(i, j + 1)) : 1);
-                            ;
+                            var p1 = ((labelMatrix[i][j].FirstClass + upperNeighbor.FirstClass + leftNeighbor.FirstClass
+                                     + rightNeighbor.FirstClass + lowNeighbor.FirstClass) *
+                                     ((i - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i - 1, j)) : 1) *
+                                     ((j - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i, j - 1)) : 1) *
+                                     ((i + 1 < img.Width) ? ColorMetric(currentPixel, img.GetPixel(i + 1, j)) : 1) *
+                                     ((j + 1 < img.Height) ? ColorMetric(currentPixel, img.GetPixel(i, j + 1)) : 1));
                             var p2 = (labelMatrix[i][j].SecondClass + upperNeighbor.SecondClass + leftNeighbor.SecondClass
                                      + rightNeighbor.SecondClass + lowNeighbor.SecondClass) *
                                      ((i - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i - 1, j)) : 1) *
@@ -114,14 +113,13 @@ namespace ImageSegmentation
                                 ? labelMatrix[i + 1][j]
                                 : new ProbabilityDistribution(1, 1);
                             var currentPixel = img.GetPixel(i, j);
-                            var p2 = ((labelMatrix[i][j].FirstClass + upperNeighbor.FirstClass + leftNeighbor.FirstClass
+                            var p1 = ((labelMatrix[i][j].FirstClass + upperNeighbor.FirstClass + leftNeighbor.FirstClass
                                      + rightNeighbor.FirstClass + lowNeighbor.FirstClass) *
                                      ((i - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i - 1, j)) : 1) *
                                      ((j - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i, j - 1)) : 1) *
                                      ((i + 1 < img.Width) ? ColorMetric(currentPixel, img.GetPixel(i + 1, j)) : 1) *
                                      ((j + 1 < img.Height) ? ColorMetric(currentPixel, img.GetPixel(i, j + 1)) : 1));
-                            ;
-                            var p1 = (labelMatrix[i][j].SecondClass + upperNeighbor.SecondClass + leftNeighbor.SecondClass
+                            var p2 = (labelMatrix[i][j].SecondClass + upperNeighbor.SecondClass + leftNeighbor.SecondClass
                                      + rightNeighbor.SecondClass + lowNeighbor.SecondClass)*
                                      ((i - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i - 1, j)) : 1) *
                                      ((j - 1 >= 0) ? ColorMetric(currentPixel, img.GetPixel(i, j - 1)) : 1) *
@@ -135,7 +133,7 @@ namespace ImageSegmentation
 //                                var _d = ((j + 1 < img.Height) ? ColorMetric(currentPixel, img.GetPixel(i, j + 1)) : 1);
 //                                File.AppendAllText(pathToSource + "log", p1 + "\t" + p2 + "\n");
 //                            }
-                            labelMatrix[i][j] = new ProbabilityDistribution((double)p1 / (p1 + p2), (double)p2 / (p1 + p2));
+                            labelMatrix[i][j] = new ProbabilityDistribution((double)p1 / (p1 + p2), (double)(1 - p1));
                         }
                     }
                 }
