@@ -16,13 +16,9 @@ namespace ImageSegmentation
 
         public static void SaveImage(Bitmap image, string path)
         {
-            var filename = path + "out.png";
+            string filename = path + "out.png";
             image.Save(filename);
         }
-        public static void SaveImage(Bitmap image, string path, int i)
-        {
-            var filename = path + "out" + i + ".png";
-            image.Save(filename);
-        }
+
     }
 }

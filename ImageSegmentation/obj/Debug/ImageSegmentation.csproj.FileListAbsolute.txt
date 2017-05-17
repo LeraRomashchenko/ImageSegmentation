@@ -1,0 +1,24 @@
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe.config
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.pdb
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.csprojResolveAssemblyReference.cache
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.exe
+c:\users\romashchenko\documents\visual studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.pdb
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\bin\Debug\ImageSegmentation.exe.config
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\obj\Debug\ImageSegmentation.exe
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\obj\Debug\ImageSegmentation.pdb
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\bin\Debug\ImageSegmentation.exe
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\bin\Debug\ImageSegmentation.pdb
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\obj\Debug\ImageSegmentation.csprojResolveAssemblyReference.cache
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Debug\ImageSegmentation.exe.config
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Debug\ImageSegmentation.exe
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Debug\ImageSegmentation.pdb
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Debug\ImageSegmentation.exe
+C:\Users\romashchenko\Documents\ImageSegmentation\bin\Debug\ImageSegmentation.pdb
+C:\Users\romashchenko\Documents\ImageSegmentation\obj\Debug\ImageSegmentation.csprojResolveAssemblyReference.cache
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe.config
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.exe
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.pdb
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.exe
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\bin\Debug\ImageSegmentation.pdb
+C:\Users\Lera\Documents\Visual Studio 2015\Projects\ImageSegmentation\ImageSegmentation\obj\Debug\ImageSegmentation.csprojResolveAssemblyReference.cache
